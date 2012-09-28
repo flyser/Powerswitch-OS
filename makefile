@@ -3,7 +3,7 @@ CC        = gcc
 CFLAGS    = -Wall -Wextra -nostdlib -fno-builtin -nostartfiles -nodefaultlibs -march=i586 -m32 -Wwrite-strings
 LINK      = ld
 LINKFLAGS = -A i386 -melf_i386
-EMU       = qemu-system-i386
+EMU       = qemu-system-i386 -m 16
 
 OBJFILES = loader.o kernel.o io.o
  
